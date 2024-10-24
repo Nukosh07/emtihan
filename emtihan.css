@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+.nuko {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: nuko 2s linear infinite;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+.nuko1 {
+  width: 300px;
+  height: 70px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nuko2 {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  animation: nuk 2s ease-in-out infinite;
+}
+.nuko3 {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+}
+.nuk {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.nuk:hover {
+  transform: rotate (180deg);
+  background-color: pink;
+  transition-duration: 0.5s;
+  width: 200px;
+  height: 200px;
+  animation: rotate 6s;
+}
+.nuk1{
+  padding-top: 150px;
+}
+@keyframes nuk {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 60px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes nuko {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
